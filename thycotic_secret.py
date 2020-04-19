@@ -4,18 +4,18 @@ __metaclass__ = type
 
 DOCUMENTATION = """
       lookup: thycotic_sdk
-        author: Paulo Dorado <pdorado@tsiva.com>
-        version_added: "1.0"
-        short_description: Look up secrets from Thycoptic Secret Server
-        description:
-            - This lookup uses the Thycotic SDK python library to lookup secrets in
-        options:
-          _terms:
-            description: path(s) of files to read
-            required: True
-        notes:
-          - if read in variable context, the file can be interpreted as YAML if the content is valid to the parser.
-          - this lookup does not understand 'globing' - use the fileglob lookup instead.
+      author: Paulo Dorado <pdorado@tsiva.com>
+      version_added: "1.0"
+      short_description: Look up secrets from Thycoptic Secret Server
+      description:
+          - This lookup uses the Thycotic SDK python library to lookup secrets in
+      options:
+        _terms:
+          description: path(s) of files to read
+          required: True
+      notes:
+        - if read in variable context, the file can be interpreted as YAML if the content is valid to the parser.
+        - this lookup does not understand 'globing' - use the fileglob lookup instead.
 """
 
 from ansible.errors import AnsibleError, AnsibleParserError
