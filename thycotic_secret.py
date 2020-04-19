@@ -15,7 +15,7 @@ DOCUMENTATION = """
           required: True
       notes:
         - if read in variable context, the file can be interpreted as YAML if the content is valid to the parser.
-        - this lookup does not understand 'globing' - use the fileglob lookup instead.
+          - this lookup does not understand 'globing' - use the fileglob lookup instead.
 """
 
 from ansible.errors import AnsibleError, AnsibleParserError
